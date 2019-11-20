@@ -1,0 +1,13 @@
+<div class="produto">
+  <div class="gallery">
+    {% for img in product.images %}
+      <img src="{{ img | img_url: "600x" }}" alt="{{ product.title }}">
+    {% endfor %}
+  </div>
+  <form action="/cart/add" method="post">
+    <select name="id">
+      {% for v in product.variants %}<option value="{{ v.id }}">{{ v.title }}</option>{% endfor %}
+    </select>
+    <button type="submit">Add to cart</button>
+  </form>
+</div>

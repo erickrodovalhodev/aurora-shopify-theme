@@ -1,0 +1,6 @@
+{% section "banner" %}
+<section class="grid-produtos">
+  {% for produto in collections.frontpage.products limit: 12 %}
+    {% render "card-produto", produto: produto %}
+  {% endfor %}
+</section>
