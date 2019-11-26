@@ -1,0 +1,5 @@
+:root { --color: #1a1a1a; --accent: #b8860b; }
+body { margin: 0; font-family: system-ui; color: var(--color); }
+.card { width: 220px; }
+.card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.grid-produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
