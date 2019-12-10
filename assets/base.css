@@ -3,3 +3,4 @@ body { margin: 0; font-family: system-ui; color: var(--color); }
 .card { width: 220px; }
 .card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 .grid-produtos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+/* rationale: grid here, the component owns its own gap */
